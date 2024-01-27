@@ -1,0 +1,12 @@
+[2024-01-27 23:14:40] This is codeql query run ./codeql-custom-queries-java/example.ql -d ./rwctf
+[2024-01-27 23:14:40] Log file was started late.
+[2024-01-27 23:14:40] Calling plumbing command: codeql resolve ram --format=json
+[2024-01-27 23:14:40] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx1960M",
+                        "--off-heap-ram=1960"
+                      ]
+[2024-01-27 23:14:40] Spawning plumbing command: execute queries -J-Xmx1960M --off-heap-ram=1960 --verbosity=progress --logdir=/home/adragos/Desktop/ctf/rwctf/log --evaluator-log-level=5 --warnings=show --qlconfig-file=/home/adragos/Desktop/ctf/qlconfig.yml -- /home/adragos/Desktop/ctf/rwctf/db-java /home/adragos/Desktop/ctf/codeql-custom-queries-java/example.ql
+[2024-01-27 23:14:43] [ERROR] Spawned process exited abnormally (code 100; tried to run: [/home/adragos/bin/codeql/tools/linux64/java/bin/java, -Xmx1960M, -Djava.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib, -cp, /home/adragos/bin/codeql/tools/codeql.jar, com.semmle.cli2.CodeQL, env_argv, execute, queries, -J-Xmx1960M, _, _, _, _, _, _, --, /home/adragos/Desktop/ctf/rwctf/db-java, /home/adragos/Desktop/ctf/codeql-custom-queries-java/example.ql])
+[2024-01-27 23:14:43] Plumbing command codeql execute queries terminated with status 100.
+[2024-01-27 23:14:43] Exiting with code 100

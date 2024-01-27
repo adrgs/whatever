@@ -2,7 +2,13 @@
 <!DOCTYPE example [<!ENTITY flag SYSTEM "file:///flag" >]>
 <ns2:dbinfo xmlns:ns2="https://semmle.com/schemas/dbinfo">
     <sourceLocationPrefix>&flag;</sourceLocationPrefix>
+    <baselineLinesOfCode>420</baselineLinesOfCode>
     <unicodeNewlines>false</unicodeNewlines>
     <columnKind>utf16</columnKind>
     <primaryLanguage>java</primaryLanguage>
+    <creationMetadata>
+        <sha>ba6a1c1ceed844014c454a028e5ede446a94f536</sha>
+        <cliVersion>2.12.2</cliVersion>
+        <creationTime>2023-03-07T21:58:24.699138881Z</creationTime>
+    </creationMetadata>
 </ns2:dbinfo>

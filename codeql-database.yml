@@ -1,9 +1,0 @@
----
-sourceLocationPrefix: "/home/adragos/Desktop/ctf/project"
-baselineLinesOfCode: 1
-unicodeNewlines: true
-columnKind: "utf16"
-primaryLanguage: "javascript"
-creationMetadata:
-  cliVersion: "2.12.3"
-  creationTime: "2024-01-27T21:36:54.283987728Z"
